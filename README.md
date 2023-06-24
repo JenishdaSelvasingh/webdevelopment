@@ -3,6 +3,6 @@
 The main objective of this project is to provide a complete Scholarship Management System without the need of manual intervention. It helps to handle the management of scholarship allocation. It also gives an easier way to view the status of the scholarship details after each process.
 
 # Technologies <br>
-Backend
-Frontend
-Database
+### Backend <br>
+### Frontend <br>
+### Database <br>
