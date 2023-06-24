@@ -7,8 +7,7 @@ The main objective of this project is to provide a complete Scholarship Manageme
 ![javaservlet](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/9c1c150c-5b59-40f0-b431-c3cc24274e2a)
 
 ### Frontend <br>
-![25-html-css-tutorials-6a864f387185](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/812d756b-ce1c-41d9-96dc-1a2cc48650eb)
-![js](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/365559f0-304c-4665-8c26-45a0e213f413)
+![images](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/82d0faf3-6d2f-4f04-abf1-37e65c2c6030)
 
 ### Database <br>
 ![mysql-tutorial](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/999e2494-5940-4c6c-b66a-435b96174703)
