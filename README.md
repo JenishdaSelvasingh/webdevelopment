@@ -2,7 +2,7 @@
 # Description👈<br>
 The main objective of this project is to provide a complete Scholarship Management System without the need of manual intervention. It helps to handle the management of scholarship allocation. It also gives an easier way to view the status of the scholarship details after each process.
 
-# Technologies <br>
+# Technologies👩‍💻<br>
 ### Backend <br>
 ![javaservlet](https://github.com/JenishdaSelvasingh/webdevelopment/assets/136103328/9c1c150c-5b59-40f0-b431-c3cc24274e2a)
 
