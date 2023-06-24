@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+	<title>Cancel-Ticket</title>
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="css/stylesheet" href="cancel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #17a971;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+    	#header > #profile {
+    		position: relative;
+    		top: -10px;
+    		left: 71%;
+    	}
+    	#header > #profile img {
+    		position: relative;
+    		margin-left: -5px;
+    		top: 0px;
+    		left: 6px;
+    		height: 35px;
+    		width: 35px;
+    	}
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: #0c9299;
+			border: 3px solid darkblue;
+			border-radius: 10px;
+			width: 250px;
+			padding: 0;
+			margin-left: 25px;
+		}
+		#navbar img{
+			left: 0px;
+			margin-right: 10px;
+			height: 55px;
+			width: 55px;
+			vertical-align: middle;
+
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+    		font-size: 18px;
+    		font-family: 'Dosis';
+    		vertical-align: middle;
+    		background-color:#17a971;
+    		height: 70px;
+    	}
+		p{
+			font-size:20px;
+			font-family: Arial, Helvetica, sans-serif;
+			/*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+		}
+
+    	input.border {
+			border: none;
+			border-bottom: 1px solid #a6a9ab;
+			outline: none;
+			width:200px;
+		}
+		.container#blur.active {
+			filter: blur(4px);
+		}
+		#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 0px;
+			margin-bottom: 30px;
+    	}
+		#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+			color: black;
+    	}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  		font-size: 18px;
+  		font-family: 'Dosis';
+  		vertical-align: middle;
+  		background-color:#9a00ff;
+  		height: 70px;
+    	}
+		#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 50px;
+    	}
+		#navbar button{
+    		margin-top: 10px;
+			background-color: #9763f6;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			padding: 15px;
+			margin-left: 25px;
+			cursor: pointer;
+		}
+		#pnr{
+    		border: none;
+   			border-bottom: 2px solid #a6a9ab;
+    		outline: none;
+    		width:200px;
+			height: 35px;
+		}
+
+	</style>
+</head>
+<body>
+<body style="background-color: #e0b0ff;; background-image: none;">
+    <div class="container" id="blur">
+    	<div id="header">
+		
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="home.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		<span id="profile"><a href="#"><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"/></a></span>
+	</div>
+
+	<div id="navbar">
+		<nav>
+			<button onclick="location.href='bookScholarship.html';" style="margin-left: 80px;"><span>Apply Scholarship</span></button>
+			<button onclick="location.href='history.html';"><span>Application History</span></button>
+			<button onclick="location.href='scholarshipStatus.html';"><span>Scholarship Status</span></button>
+			<button onclick="location.href='cancellation.html';"><span>Update Scholarship</span></button>
+			<button onclick="location.href='scholarshipCalendar.html';"><span>Search Scholarship</span></button>
+	</nav>
+	</div>
+	
+    <form style="margin-top:30px;">
+    	<center>
+        	<p for="pnr" style="font-size: 25px;color:#9a00ff;">Enter Your Application Number</p>
+        	<input type="text" id="pnr" name="pnr" maxlength="10" placeholder="Enter the Number" required style="margin-top: 10px;"><br>
+        	<input type="submit" id="submit" onclick="getRecord()" style="border: 3px solid black;border-radius: 5px;padding: 15px; background-color: #9763f6;font-size: 15px;color: white;margin-top: 20px;cursor: pointer;">
+    	</center>
+	</form>
+
+	<div id="add-table-here"></div>
+    
+    <div id="footer" style="padding-top: 25px;">
+		<span style="margin-right: 500px; margin-left: 50px; font-family: 'Times New Roman';vertical-align: middle;color: white;">&copy copyrights</span> <span style="margin-right: 500px;"><a href="#" style="color: white;">About Us</a> | <a href="#" style="color: white;">FAQ</a> | <a href="#" style="color: white;">Contact Us</a></span><span style="color: white;">Designed by ADJ Team</span>
+	</div>
+    
+</div>
+<div class="container" id="blur1"></div>
+<div class="form-popup" id="myForm1" style="width: 600px;">
+    <form action="/action_page.php" class="form-container">
+   
+    <center><p style="font-size:20px">Are you sure?</p></center>  
+    <center><button style="margin-right:50px" type="button" class="btn" onclick="yes()">YES</a></button><button  type="button" onclick="no()" class="btn">NO</a></button></center>
+    </form>   
+</div>
+
+<div class="form-popup" id="myForm2" style="width: 600px;">
+    <form action="/action_page.php" class="form-container">
+   
+    <center><p style="font-size:20px">Cancelled Successfully!!!</p></center>  
+    <center><button onclick="location.href='home.html'" type="button" class="btn">OK</a></button></center>
+    </form>   
+</div>
+<script>
+	function getRecord() {
+		window.alert("inside getRecord()");
+		var xhttp;
+		var ticno = document.getElementById('pnr').value;
+		var url = "GetRecord?ticno="+ticno;
+		alert(url);
+		xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			// alert("inside xhttp");
+			if (this.readyState == 4 && this.status == 200) {
+				// alert("inside if");
+				var val = this.responseText;
+				// alert(val);
+				document.getElementById("add-table-here").innerHTML = val;
+				document.getElementById("submit").remove();
+			}
+		};
+		xhttp.open("GET", url, false);
+		xhttp.send();
+	}
+	function cancel() {
+		document.getElementById("myForm1").style.display = "block";
+		var blur = document.getElementById('blur');
+		blur.classList.toggle('active');
+	}
+
+	function yes() {
+		document.getElementById("myForm2").style.display = "block";
+		var blur = document.getElementById('blur1');
+		blur.classList.toggle('active');
+		cancel();
+	}
+	function no() {
+		document.getElementById("myForm1").style.display = "none";
+		var blur = document.getElementById('blur');
+		blur.classList.toggle('active');
+	}
+
+	function cancel() {
+		window.alert("inside cancel()");
+		var xhttp;
+		var ticno = document.getElementById('pnr').value;
+		var url = "Cancel?ticno="+ticno;
+		alert(url);
+		xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			// alert("inside xhttp");
+			if (this.readyState == 4 && this.status == 200) {
+				alert("Request sent");
+			}
+		};
+		xhttp.open("GET", url, false);
+		xhttp.send();
+	}
+</script>
+
+<br><br><br><br><br><br>
+
+
+</body>
+</html>

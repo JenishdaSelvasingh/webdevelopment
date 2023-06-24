@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction</title>
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<style type="text/css">
+	* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color:#17a971;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+    	#header > #profile {
+    		position: relative;
+    		top: -10px;
+    		left: 71%;
+    	}
+    	#header > #profile img {
+    		position: relative;
+    		margin-left: -5px;
+    		top: 0px;
+    		left: 6px;
+    		height: 35px;
+    		width: 35px;
+    	}
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: brown;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			padding: 0;
+			margin-left: 25px;
+		}
+		#navbar img{
+			left: 0px;
+			margin-right: 10px;
+			height: 55px;
+			width: 55px;
+			vertical-align: middle;
+
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+    		font-size: 18px;
+    		font-family: 'Dosis';
+    		vertical-align: middle;
+    		background-color: #17a971;
+    		height: 70px;
+    	}
+        th,td{
+        	padding: 10px;
+        	text-align: center;
+        }
+
+		label {
+    		font-size: large;
+    		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		input.border {
+    		border: none;
+   			border-bottom: 2px solid #a6a9ab;
+    		outline: none;
+    		width:200px;
+
+		}
+		p{
+    		font-size:40px;
+   			font-family: Arial, Helvetica, sans-serif;
+            /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+		}
+		#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 0px;
+			margin-bottom: 30px;
+    	}
+		#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+			color: black;
+    	}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  		font-size: 18px;
+  		font-family: 'Dosis';
+  		vertical-align: middle;
+  		background-color:#9a00ff;
+  		height: 70px;
+    	}
+		#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 50px;
+    	}
+		#navbar button{
+    		margin-top: 10px;
+			background-color: #9763f6;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			padding: 15px;
+			margin-left: 600px;
+			cursor: pointer;
+		}
+
+        
+	</style>
+</head>
+<body style="background-color: #e0b0ff;; background-image: none;">
+	<div id="header">
+		
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="shome.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		<span id="profile"><a href="#"><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"/></a></span>
+	</div>
+
+	<div id="navbar">
+		<nav>
+			<button onclick="location.href='history1.html';"><span>Application History</span></button>
+	</nav>
+	</div>
+
+	<div style="margin-top:30px;">
+		<center>
+				<p for="pnr" style="margin-left:10px;color:#9a00ff;font-size: 25px;" >Enter Student Email Id</p>
+				<input  class="border" type="email" id="email" name="email"  required style="margin-top: 10px; padding:10px;font-size: large;font-family: 'Times New Roman', Times, serif;height: 35px;" placeholder="Email Id"><br>
+				<input type="submit" id="submit" onclick="viewHistory()" style="border: 3px solid black;border-radius: 5px;padding: 15px; background-color: #9763f6;font-size: 15px;color: white;margin-top: 20px;cursor: pointer;">
+		</center>
+	</div>
+      
+	<br><br><br><br>
+	<center>
+	<div id="add-table-here"></div>
+    
+	</center>
+	<div id="footer" style="padding-top: 25px;">
+		<span style="margin-right: 500px; margin-left: 50px; font-family: 'Times New Roman';vertical-align: middle; color: white;">&copy copyrights</span> <span style="margin-right: 500px;"><a href="#" style="color: white;">About Us</a> | <a href="#" style="color: white;">FAQ</a> | <a href="#" style="color: white;">Contact Us</a></span><span style="color: white;">Designed by ADJ Team</span>
+	</div>
+
+
+	<script>
+		function viewHistory() {
+			window.alert("inside viewHistory()");
+			var xhttp;
+			var email = document.getElementById('email').value;
+			var url = "History?email="+email;
+			alert(url);
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				// alert("inside xhttp");
+				if (this.readyState == 4 && this.status == 200) {
+					// alert("inside if");
+					var val = this.responseText;
+					// alert(val);
+					document.getElementById("add-table-here").innerHTML = val;
+					document.getElementById("submit").remove();
+				}
+			};
+			xhttp.open("GET", url, false);
+			xhttp.send();
+		}
+	</script>
+</body>
+
+</html>
+

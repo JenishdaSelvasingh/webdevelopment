@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<title>Delete-Scholarship</title>
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="css/stylesheet" href="cancel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<style type="text/css">
+	* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+    	
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: #0c9299;
+			border: 3px solid darkblue;
+			border-radius: 10px;
+			width: 250px;
+			padding: 0;
+			margin-left: 25px;
+		}
+		#navbar img{
+			left: 0px;
+			margin-right: 10px;
+			height: 55px;
+			width: 55px;
+			vertical-align: middle;
+
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		p{
+		    font-size:20px;
+		    font-family: Arial, Helvetica, sans-serif;
+		    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+		}
+		#title{
+    		font-family: 'Dosis';
+    		font-size: 60px;
+    		color: #0c9299;
+    		background-color: powderblue;
+    	}
+
+	    input.border {
+		    border: none;
+		    border-bottom: 1px solid #a6a9ab;
+		    outline: none;
+		    width:200px;
+	}
+	.container#blur.active {
+	      filter: blur(4px);
+	  }
+	  tr,th{
+	  	padding: 10px;
+	  	text-align: center;
+	  }
+	  #title{
+    		font-family: 'Dosis';
+    		font-size: 60px;
+    		color: #9a00ff;
+    		background-color: #e0b0ff;;
+    	}
+    	input{
+    		font-family: 'Dosis';
+    		font-size: 25px;
+    		border-radius: 5px;
+    	}
+    	label{
+    		font-family: 'Dosis';
+    		margin-left: 550px;
+    		font-size: 30px;
+    		color: #9a00ff;
+    	}
+	</style>
+</head>
+<body>
+<body background="">
+    <div class="container" id="blur">
+    	<div id="header" style="padding-top: 30px;">
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="ahome.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		
+	</div>
+<div id="title" align="center">Delete Scholarship</div>
+    <div style="margin-top:30px;">
+    	<form action="http://localhost:8088/Scholarship_Management_System/DeleteScholarship" method="GET">
+			<label>Scholarship ID : </label>
+			<input type="text" name="tid" id="tid" required><br><br>
+		
+
+	  	<div>
+	  		<button type="submit" class="submit" style="border: 3px solid black;border-radius: 5px;padding: 15px; background-color: #9763f6;color: white ;font-size: 15px;margin-left: 700px;margin-top: 20px;cursor: pointer;">Submit</button>
+		 </div>
+	</form>
+    </div>
+
+    <br><br><br><br>
+
+    <div id="add-table-here"></div>
+
+	
+  
+</div>
+<div class="container" id="blur1"></div>
+
+<script>
+function cancel() {
+  document.getElementById("myForm1").style.display = "block";
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+}
+
+function yes() {
+  document.getElementById("myForm2").style.display = "block";
+  var blur = document.getElementById('blur1');
+  blur.classList.toggle('active');
+}
+function closeForm() {
+  document.getElementById("myForm1").style.display = "none";
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active');
+}
+
+</script>
+
+<br><br><br><br><br><br>
+
+
+</body>
+</html>

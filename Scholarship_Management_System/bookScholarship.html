@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Book-Scholarship</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+<link rel="stylesheet" href="css/bookscholarship.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+
+
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 0px;
+			margin-bottom: 30px;
+    	}
+		#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+			color: black;
+    	}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  		font-size: 18px;
+  		font-family: 'Dosis';
+  		vertical-align: middle;
+  		background-color:#9a00ff;
+  		height: 70px;
+    	}
+		#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 50px;
+    	}
+
+
+
+
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	
+    	
+    	#header > #profile {
+    		position: relative;
+    		top: -10px;
+    		left: 71%;
+    	}
+    	#header > #profile img {
+    		position: relative;
+    		margin-left: -5px;
+    		top: 0px;
+    		left: 6px;
+    		height: 35px;
+    		width: 35px;
+    	}
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: #9763f6;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			padding: 0;
+			margin-left: 25px;
+			cursor: pointer;
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		button{
+			height: 61.6px;
+		}
+		
+
+
+</style>
+</head>
+<body>
+<body style="background-color: #e0b0ff; background-image: none;">
+<div class="container" id="blur">
+	<div id="header">
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="home.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		<span id="profile"><a href="#"><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"/></a></span>
+	</div>
+
+	<div id="navbar">
+		<nav>
+			<button onclick="location.href='bookScholarship.html';" style="margin-left: 80px;"><span>Apply Scholarship</span></button>
+			<button onclick="location.href='history.html';"><span>Application History</span></button>
+			<button onclick="location.href='scholarshipStatus.html';"><span>Scholarship Status</span></button>
+			<button onclick="location.href='cancellation.html';"><span>Update Scholarship</span></button>
+			<button onclick="location.href='scholarshipCalendar.html';"><span>Search Scholarship</span></button>
+	</nav>
+	</div>
+	<div style="text-align: center;margin-left: -300px;">
+	<form name="searchForm">
+		<span class="search">
+			<label for="source" style="margin-left:50px;color:#9a00ff;font-size: 25px;"> Scholarship: </label>
+			<select name="src" id="source" required style="padding: 10px; width: 18%;">
+				<option value="" disable selected hidden>Choose Scholarship</option>
+				<option value="BC MBC">BC MBC</option>
+		        <option value="Adi Dravider">Adi Dravider</option>
+		        <option value="PhD Scholarship">PhD Scholarship</option>
+		        <option value="Incentive Scheme for Rural">Incentive Scheme for Rural</option>
+		        <option value="Thanthai Periyar Memorial Award">Thanthai Periyar Memorial Award</option>
+		        <option value="Adi Dravidar&Tribal">Adi Dravidar&Tribal</option>
+		        
+		    </select>
+		</span>
+<br><br>
+	    <span class="search1">
+	    	<label for="dest" style="margin-left:50px;color:#9a00ff;font-size: 25px;"> Community: </label>
+			<select name="dest" id="dest" required style="padding: 10px; width: 18%;">
+				<option value="" disable selected hidden>Choose Community</option>
+				<option value="BC">BC</option>
+		        <option value="SC">SC</option>
+		        <option value="General">General</option>
+		        <option value="MBC/DNC">MBC/DNC</option>
+		        <option value="BC/MBC/DNC">BC/MBC/DNC</option>
+		        <option value="ST">ST</option>
+			</select>
+	    </span>
+<br><br>
+		<label for="dateoftravel" style="margin-left:50px;color:#9a00ff;font-size: 25px;">Role:</label>
+	  	<input type="text" id="dateoftravel" name="date" required style="padding: 10px;"><br><br>
+	  	<span class="search2">
+	  		<input type="submit" id="Submitbtn" onclick ="searchScholarship()" value="Search" style="border: 3px solid black;border-radius: 5px;padding: 15px; background-color: #9763f6;font-size: 15px;color: white; margin-left: -750px;cursor: pointer;">
+		 </span>
+	</form>
+	</div>
+	<br>
+	<div id="add-table-here"></div>
+
+		<div id="footer" style="bottom: 0px; left: 0px; right:0px; padding-top: 25px;">
+		<span style="margin-right: 500px; margin-left: 50px; font-family: 'Times New Roman';vertical-align: middle;color: white;">&copy copyrights</span> <span style="margin-right: 500px;"><a href="#" style="color: white;">About Us</a> | <a href="#" style="color: white;">FAQ</a> | <a href="#" style="color: white;">Contact Us</a></span><span style="color: white;">Designed by ADJ Team</span>
+	</div>
+</div>
+
+	<div class="form-popup" id="myForm" >
+	          <form action="BookScholarship" method="get" name="bookingForm" class="form-container">
+	            <h1>Applying</h1>
+					<label for="name">Name:</label>
+					<input type="text" id="fname" name="spname"><br><br>
+					<label for="tname">Role:</label>
+					<input type="text" id="ftname" name="stname"><br><br>
+					<label for="tnumber">Scholarship Id:</label>
+					<input type="number" id="ftnumber" name="stno"><br><br>
+					<label for="from">Scholarship Name:</label>
+					<input type="text" id="ffrom" name="sfrom">
+					<label for="to">Community:</label>
+					<input type="text" id="fto" name="sto"><br><br>
+					<label for="child">Aadhar Number:</label>
+					<input type="number" id="fchild" name="scsno" required>
+					<label for="adult">Community Number:</label>
+					<input type="number" id="fadult" name="sasno" required><br><br>				
+	  				<input type="submit" value="Proceed With Nextpage" class="btn" />
+	            	<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    			</form>
+	</div>
+
+<script>
+function booknow(tnamein, tnoin, pricein, srcin, desin, seatsin, durin) {
+	document.getElementById("ftname").value = tnamein;
+	document.getElementById("ftnumber").value = tnoin;
+	document.getElementById("ffrom").value = srcin;
+	document.getElementById("fto").value = desin;
+  document.getElementById("myForm").style.display = "block";
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active')
+}
+
+function searchScholarship() {
+	window.alert("inside searchScholarship()");
+	var xhttp;
+	var src = document.searchForm.src.value;
+	var dest = document.searchForm.dest.value;
+	//var dot = document.searchForm.dot.value;
+	// var url = "SearchTrain?source="+src+"&destination="+dest+"&dot="+dot;
+	var url = "SearchScholarship?source="+src+"&destination="+dest;
+	alert(src + dest + url);
+	xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		// alert("inside xhttp");
+		if (this.readyState == 4 && this.status == 200) {
+			// alert("inside if");
+			var val = this.responseText;
+			// alert(val);
+			console.log("run");
+			document.getElementById('Submitbtn').remove();
+			document.getElementById("add-table-here").innerHTML = val; 
+		}
+		
+	};
+	xhttp.open("GET", url, false);
+	xhttp.send();
+}
+
+
+</script>
+
+
+</body>
+</html>

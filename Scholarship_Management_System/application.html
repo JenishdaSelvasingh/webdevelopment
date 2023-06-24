@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="stylesheet" href="css/application.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+.btn-cancel {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+#MyForm{
+  display: none;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 14px;
+    background: #ececec;
+} 
+	* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #0c9299;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+    	#header > #profile {
+    		position: relative;
+    		top: -10px;
+    		left: 71%;
+    	}
+    	#header > #profile img {
+    		position: relative;
+    		margin-left: -5px;
+    		top: 0px;
+    		left: 6px;
+    		height: 35px;
+    		width: 35px;
+    	}
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: #0c9299;
+			border: 3px solid darkblue;
+			border-radius: 10px;
+			width: 250px;
+			padding: 0;
+			margin-left: 25px;
+			cursor: pointer;
+		}
+		#navbar img{
+			left: 0px;
+			margin-right: 10px;
+			height: 55px;
+			width: 55px;
+			vertical-align: middle;
+
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+    		font-size: 18px;
+    		font-family: 'Dosis';
+    		vertical-align: middle;
+    		background-color: #17a971;
+    		height: 70px;
+    	}
+		#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 0px;
+			margin-bottom: 30px;
+    	}
+		#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+			color: black;
+    	}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  		font-size: 18px;
+  		font-family: 'Dosis';
+  		vertical-align: middle;
+  		background-color:#9a00ff;
+  		height: 70px;
+    	}
+		#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 50px;
+    	}
+		#navbar button{
+    		margin-top: 10px;
+			background-color: #9763f6;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			height: 61.6px;
+			padding: 15px;
+			margin-left: 25px;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body style="background-color:#e0b0ff;">
+	<div id="header">
+		
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="home.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		<span id="profile"><a href="#"><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"/></a></span>
+	</div>
+
+	<div id="navbar">
+		<nav>
+				<button onclick="location.href='bookScholarship.html';" style="margin-left: 80px;"><span>Apply Scholarship</span></button>
+				<button onclick="location.href='history.html';"><span>Application History</span></button>
+				<button onclick="location.href='scholarshipStatus.html';"><span>Scholarship Status</span></button>
+				<button onclick="location.href='cancellation.html';"><span>Update Scholarship</span></button>
+				<button onclick="location.href='scholarshipCalendar.html';"><span>Search Scholarship</span></button>
+		</nav>
+	</div>
+	<div style="margin-top: 50px;" align="center">
+	<h1 align="center" style="margin-bottom: 20px; color: #9a00ff;">Welcome To E-Scholarship</h1>
+
+<details>
+  <summary style="font-size:20px;color: #9a00ff;"><bold>Education Details</bold></summary>
+ 
+		<form action="/action_page.php">
+	    
+	        <div id="myForm" class="container">
+	            <form action="/action_page.php" class="form-container">
+	              <label for="name" style="color: #9a00ff;">Institute Name:</label>
+	              <input type="text" id="name" name="name" placeholder="Enter Institute"><br><br>
+	              <label for="tname" style="color: #9a00ff;">EMIS Number:</label>
+	              <input type="text" id="tname" name="tname" placeholder="Enter EMIS NUmber"><br><br>
+	              
+	                <lable for="exdate" style="color: #9a00ff;">Class</lable>
+	                <select id="month" name="month" required>
+	                    <option value="0" selected>1st</option>
+	                    <option value="1">2nd</option>
+	                    <option value="2">3rd</option>
+	                    <option value="3">4th</option>
+	                    <option value="4">5th</option>
+	                    <option value="5">6th</option>
+	                    <option value="6">7th</option>
+	                    <option value="7">8th</option>
+	                    <option value="8">9th</option>
+	                    <option value="9">10th</option>
+	                    <option value="10">11th</option>
+	                    <option value="11">12th</option>
+						<option value="11">UG</option>
+						<option value="11">PG</option>
+	                </select>
+	                
+	                <select id="year" name="year">
+	                    <option value="0" selected>State Board</option>
+	                    <option value="1">CBSE</option>
+	                    <option value="2">ICSE</option>
+	                    <option value="3">GOVT</option>
+	                    <option value="4">Autonomous</option>
+	                    <option value="5">Self-aided</option>
+	                </select><br><br>
+           
+	              <label for="tnumber" style="color: #9a00ff;">City:</label>
+	              <input type="text" id="tnumber" name="tnumber" placeholder="Enter Location"><br><br>
+	              
+	            
+	              
+				<input type="button"  onclick="addScholarship()" value="Done" class="btn" />
+	            <button type="button" class="btn-cancel" onclick="closeForm()">Reset</button>
+
+	    	</div>
+    </form>
+    
+ </details>
+ <details>
+    <summary style="font-size:20px; color: #9a00ff;;"><bold>Account Details</bold></summary>
+    
+ 
+		<form action="/action_page.php">
+	    
+	        <div id="myForm" class="container">
+	            <form action="/action_page.php" class="form-container">
+	              <label for="name" style="color: #9a00ff;">Bank Name:</label>
+	              <input type="text" id="name" name="name" placeholder="Bank Name"><br><br>
+	              <label for="tname" style="color: #9a00ff;">Branch:</label>
+	              <input type="text" id="tname" name="tname" placeholder="Branch Name"><br><br>
+				  <label for="name" style="color: #9a00ff;">Account No:</label>
+	              <input type="number" id="name" name="name" placeholder="Account Number"><br><br>
+	              <label for="tname" style="color: #9a00ff;">IFSC:</label>
+	              <input type="text" id="tname" name="tname" placeholder="IFSC Code"><br><br>
+	              
+	                
+	              
+				<input type="button"  onclick="addScholarship()" value="Done" class="btn" />
+	            <button type="button" class="btn-cancel" onclick="closeForm()">Reset</button>
+
+	    	</div>
+    </form>
+</details>
+<details>
+    <summary style="font-size:20px; color: #9a00ff;"><bold>Document Details</bold></summary>
+    
+ 
+		<form action="/action_page.php">
+	    
+	        <div id="myForm" class="container">
+	            <form action="/action_page.php" class="form-container">
+	              <label for="income" style="color: #9a00ff;">Income Certificate:</label>
+	              <input type="file" id="income" name="income"><br><br>
+	              <label for="community" style="color: #9a00ff;">Community Certificate:</label>
+	              <input type="file" id="community" name="community"><br><br>
+				  <label for="mark" style="color: #9a00ff;">Mark Sheet</label>
+				  <input type="file" id="mark" name="mark"><br><br>
+				  <label for="bonafide" style="color: #9a00ff;">Bonafide Certificate:</label>
+				  <input type="file" id="bonafide" name="bonafide"><br><br>
+	              
+	                
+	              
+				<input type="button"  onclick="addScholarship()" value="Done" class="btn" />
+	            <button type="button" class="btn-cancel" onclick="closeForm()">Reset</button>
+
+	    	</div>
+    </form>
+</details>
+<details>
+    <summary style="font-size:20px; color: #9a00ff;"><bold>Family Detail</bold></summary>
+    
+ 
+		<form action="/action_page.php">
+	    
+	        <div id="myForm" class="container">
+	            <form action="/action_page.php" class="form-container">
+	              <label for="fname" style="color: #9a00ff;">Father's Name:</label>
+	              <input type="text" id="fname" name="fname" placeholder="Enter Father Name"><br><br>
+	              <label for="mname" style="color: #9a00ff;">Mother's Name:</label>
+	              <input type="text" id="mname" name="mname" placeholder="Enter Mother Name"><br><br>
+				  <label for="fno" style="color: #9a00ff;">Father's Number:</label>
+	              <input type="number" id="fno" name="fno" placeholder="Enter Father Number"><br><br>
+	              <label for="mno" style="color: #9a00ff;">Mother's Number:</label>
+	              <input type="number" id="mno" name="mno" placeholder="Enter Mother Number"><br><br>
+				  <label for="fwork" style="color: #9a00ff;">Father's Occupation:</label>
+	              <input type="text" id="fwork" name="fwork" placeholder="Enter Father Work"><br><br>
+	              <label for="mwork" style="color: #9a00ff;">Mother's Occupation:</label>
+	              <input type="text" id="mwork" name="mwork" placeholder="Enter Mother Work"><br><br>
+				  <label for="address" style="color: #9a00ff;">Address:</label>
+	              <input type="text" id="address" name="address" placeholder="Enter Address">
+	              
+	                
+	              
+				<input type="button"  onclick="addScholarship()" value="Done" class="btn" />
+	            <button type="button" class="btn-cancel" onclick="closeForm()">Reset</button>
+
+	    	</div>
+    </form>
+</details>
+
+
+	</div>
+	
+
+	<div id="footer" style="padding-top: 25px;">
+		<span style="margin-right: 500px; margin-left: 50px; font-family: 'Times New Roman';vertical-align: middle; color: white;">&copy copyrights</span> <span style="margin-right: 500px;"><a href="#" style="color: white;">About Us</a> | <a href="#" style="color: white;">FAQ</a> | <a href="#" style="color: white">Contact Us</a></span><span style="color: white;">Designed by RVPS Team</span>
+	</div>
+
+
+
+
+	<script>
+		function addScholarship() {
+			if(confirm("Submitted successfully!!")) {
+				window.open("home.html");
+			}
+			else {
+				window.open("application.html");
+			}
+
+		}
+		function closeForm() {
+			window.open("application.html");
+		}
+
+		
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Niconne&display=swap" rel="stylesheet">
+
+    <title>Signup Form</title>
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+</head>
+
+<body>
+    <script>
+        var allCookie = document.cookie;
+        console.log(allCookie);
+        var cookieArr = allCookie.split(";");
+        for(var i = 0; i < cookieArr.length; i++)
+        {
+            //console.log(cookieArr[i].split("=")[0]);
+            if(cookieArr[i].split("=")[0].trim() == "InvalidSignup")
+            {
+                console.log(cookieArr[i].split("=")[1]);
+                if(cookieArr[i].split("=")[1] == "invalid")
+                {
+                    document.getElementById("errMsg").innerHTML = "Username already exists";
+                }
+                else
+                {
+                    document.getElementById("errMsg").innerHTML = "";
+                }
+                break;
+            }
+        }
+    </script>
+
+<marquee width="100%" direction="right" height="50px" style="color: plum;font-size: 25px;font-weight: bold;">E-SCHOLARSHIP MANAGEMENT SYSTEM</marquee>
+
+    <div class="container">
+        <div class="content">
+            <h1 style="color: purple;background-color:plum">Sign Up</h1>
+            <span id="errMsg" style="color:red;font-weight:bolder;"></span>
+            <form action="http://localhost:8088/Scholarship_Management_System/Signup" method="GET">
+                <label for="fullname" style="color: purple;font-weight: bold;">Fullname: </label>
+                <input name="fullname" type="text" id="txt" placeholder="Fullname"/><br>
+
+                <label for="email" style="color: purple;font-weight: bold;" >E-mail: </label>
+                <input name="email" type="email" id="txt" placeholder="E-mail"/><br>
+
+                <label for="password" style="color: purple;font-weight: bold;">Password: </label>
+                <input name="password" type="password" id="txt" placeholder="Password"/><br>
+
+                <label for="gender" style="color: purple;font-weight: bold;">Gender: </label>
+                <input name="gender" type="radio" value="m" style="margin: 0 10px;"/>
+                <label for="male" style="color: purple;font-weight: bold;">Male</label>
+                <input name="gender" type="radio" id="" value="f" style="margin: 0 10px;"/>
+                <label for="female" style="color: purple;font-weight: bold;">Female</label>
+                <input name="gender" type="radio" id="" value="o" style="margin: 0 10px;"/>
+                <label for="others" style="color: purple;font-weight: bold;">Others</label><br>
+                
+                <label for="city" style="color: purple;font-weight: bold;">City: </label>
+                <input name="city" type="text" id="txt" placeholder="City"/><br>
+
+                <label for="contact" style="color: purple;font-weight: bold;">Contact No: </label>
+                <input name="contact" type="text" maxlength="10" id="txt" placeholder="9999999999" pattern="[0-9]{10}"/><br>
+
+                <input type="submit" value="Save Details" class="btn" style="color:white;background-color:purple;font-weight: bold;"/>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

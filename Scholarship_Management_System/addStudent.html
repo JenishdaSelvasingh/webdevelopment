@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<style type="text/css">
+	* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+
+    	#title{
+    		font-family: 'Dosis';
+    		font-size: 60px;
+    		color: #9a00ff;
+    		background-color: #e0b0ff;;
+    	}
+    	input{
+    		font-family: 'Dosis';
+    		font-size: 25px;
+    		border-radius: 5px;
+    	}
+    	label{
+    		font-family: 'Dosis';
+    		margin-left: 550px;
+    		font-size: 30px;
+    		color: #9a00ff;
+    	}
+	</style>
+</head>
+<body>
+	<script>
+        var allCookie = document.cookie;
+        console.log(allCookie);
+        var cookieArr = allCookie.split(";");
+        for(var i = 0; i < cookieArr.length; i++)
+        {
+            //console.log(cookieArr[i].split("=")[0]);
+            if(cookieArr[i].split("=")[0].trim() == "InvalidaddTrain")
+            {
+                console.log(cookieArr[i].split("=")[1]);
+                if(cookieArr[i].split("=")[1] == "invalid")
+                {
+                    document.getElementById("errMsg").innerHTML = "Student already exists";
+                }
+                else
+                {
+                    document.getElementById("errMsg").innerHTML = "";
+                }
+                break;
+            }
+        }
+    </script>
+	<div id="header" style="padding-top: 30px;">
+		
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="ahome.html" style="color: white;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+	</div>
+	<div id="title" align="center">Add Student</div>
+	<span id="errMsg" style="color:red;font-weight:bolder;"></span>
+	<form style="margin-top: 30px;" action="http://localhost:8088/Scholarship_Management_System/AddStudent" method="GET">
+		<label>Email :</label>
+		<input type="text" name="email" id="email" required><br><br>
+		<label>Password :</label>
+		<input type="text" name="pwd" id="pwd" required><br><br>
+		<label>Student Name :</label>
+		<input type="text" name="name" id="name" required><br><br>
+        <label>Gender :</label>
+		<input type="text" name="gender" id="gender" required><br><br>
+		<label>City :</label>
+		<input type="text" name="city" id="city" required><br><br>
+		<label>Contact :</label>
+		<input type="text" name="contact" id="contact" required><br><br>
+		<input type="submit" name="submit" style="margin-left: 700px; padding: 10px;border: 3px solid black;background-color: #9763f6; color: white;border-radius: 5px;font-size: 20px;cursor: pointer;">
+	</form>
+</body>
+</html>

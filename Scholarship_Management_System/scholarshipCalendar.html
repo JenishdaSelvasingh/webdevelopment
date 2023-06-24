@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+
+<head>
+
+	<title>Scholarship-Details</title>
+	<link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3687/premium/3687425.png?token=exp=1653645533~hmac=4cfc7d9b433a991645b0d0d085ac4e40" type="image/icon type">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans&family=Ms+Madi&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/searchscholarship.css">
+	<style type="text/css">
+		th,td{
+			padding: 10px;
+		}
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+    	#header {
+    		font-family: 'Dosis';
+    		background-color: #17a971;
+    		padding: 12px;
+    		padding-bottom: 6px;
+    	}
+    	#header > #logo {
+    		position: relative;
+    		padding: 34px;
+    		padding-left: 25px;
+    		/*padding-right: -10px;*/
+    		font-size: 30px;
+    		top: 0px;
+    	}
+    	#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+    	}
+    	#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 8px;
+    	}
+    	#header > #profile {
+    		position: relative;
+    		top: -10px;
+    		left: 71%;
+    	}
+    	#header > #profile img {
+    		position: relative;
+    		margin-left: -5px;
+    		top: 0px;
+    		left: 6px;
+    		height: 35px;
+    		width: 35px;
+    	}
+		#navbar {
+			margin-left: -10px;
+		}
+    	#navbar button{
+    		margin-top: 10px;
+			background-color: #0c9299;
+			border: 3px solid darkblue;
+			border-radius: 10px;
+			width: 250px;
+			padding: 20px;
+			margin-left: 25px;
+		}
+		#navbar img{
+			left: 0px;
+			margin-right: 10px;
+			height: 55px;
+			width: 55px;
+			vertical-align: middle;
+
+		}
+		#navbar span{
+			font-family: 'Dosis';
+			font-size: 20px;
+			color: white;
+			vertical-align: middle;
+		}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+    		font-size: 18px;
+    		font-family: 'Dosis';
+    		vertical-align: middle;
+    		background-color: #17a971;
+    		height: 70px;
+    	}
+		#header {
+    		font-family: 'Dosis';
+    		background-color: #9a00ff;
+    		padding: 12px;
+    		padding-bottom: 0px;
+			margin-bottom: 30px;
+    	}
+		#header > #logoname {
+    		margin-right: -35px;
+    		top: -12px;
+    		font-size: 30px;
+    		position: relative;
+    		left: 0px;
+			color: black;
+    	}
+		#footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+  		font-size: 18px;
+  		font-family: 'Dosis';
+  		vertical-align: middle;
+  		background-color:#9a00ff;
+  		height: 70px;
+    	}
+		#header > #headerlink {
+    		position: relative;
+    		padding: 0 10px;
+    		font-size: 20px;
+    		top: -22px;
+    		left: 70%;
+    		margin-right: -7px;
+    		margin-left: 50px;
+    	}
+		#navbar button{
+    		margin-top: 10px;
+			background-color: #9763f6;
+			border: 3px solid black;
+			border-radius: 10px;
+			width: 250px;
+			padding: 15px;
+			margin-left: 25px;
+			cursor: pointer;
+		}
+
+		
+	</style>
+
+</head>
+<body style="background-color: #e0b0ff; background-image: none;">
+
+
+
+<div id="header">
+		
+		<span id="logoname" style="color: white;text-shadow: 4px 1px 3px black;font-family: 'Josefin Sans';">E-SCHOLARSHIP</span>
+		<span id="headerlink"><a href="home.html" style="color: white; margin-top: 30px;">Home</a> | <a href="index.html" style="color: white;">Logout</a></span>
+		<span id="profile"><a href="#"><img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"/></a></span>
+</div>
+
+	<div id="navbar" style="margin-left: 0px;padding: 0px;">
+		<nav>
+				<button onclick="location.href='bookScholarship.html';" style="margin-left: 80px;"><span>Apply Scholarship</span></button>
+				<button onclick="location.href='history.html';"><span>Application History</span></button>
+				<button onclick="location.href='scholarshipStatus.html';"><span>Scholarship Status</span></button>
+				<button onclick="location.href='cancellation.html';"><span>Update Scholarship</span></button>
+				<button onclick="location.href='scholarshipCalendar.html';"><span>Search Scholarship</span></button>
+		</nav>
+	</div>
+
+<form name="searchForm" style="margin-top: 80px; margin-left: 250px;">
+	<span class="search" style="margin-left:60px">
+		<label for="source" style="font-size: 25px;color:#9a00ff;"> Scholarship: </label>
+		<select id="source" name="src" required style="padding: 10px; width: 18%;">
+			<option value="" disable selected hidden>Choose Scholarship</option>
+			<option value="BC MBC">BC MBC</option>
+	        <option value="Adi Dravidar">Adi Dravidar</option>
+	        <option value="PhD Scholarship">PhD Scholarship</option>
+		    <option value="Incentive Scheme for Rural">Incentive Scheme for Rural</option>
+		    <option value="Thanthai Periyar Memorial Award">Thanthai Periyar Memorial Award</option>
+		    <option value="Adi Dravidar&Tribal">Adi Dravidar&Tribal</option>
+	        
+	    </select>
+	</span>
+
+    <span class="search1">
+    	<label for="dest" style="font-size: 25px;color:#9a00ff"> Communnity: </label>
+		<select id="dest" name="dest" required style="padding: 10px; width: 18%;">
+			<option value="" disable selected hidden>Choose Community</option>
+			<option value="BC">BC</option>
+	        <option value="SC">SC</option>
+            <option value="General">General</option>
+		    <option value="MBC/DNC">MBC/DNC</option>
+		    <option value="BC/MBC/DNC">BC/MBC/DNC</option>
+		    <option value="ST">ST</option>
+		</select>
+    </span>
+
+	<label for="dateoftravel" style="font-size: 25px;color:#9a00ff">Role:</label>
+  	<input type="text" id="dateoftravel" name="dot" required style="padding: 10px;"><br>
+  	<input type="submit" id="submit" onclick ="showTrain()" value="Search" style="border: 3px solid black;border-radius: 5px;padding: 15px; background-color: #9763f6;font-size: 15px;color: white;margin-left: 500px;margin-top: 20px;cursor: pointer;">
+  	<!-- <button type="submit" value="Submit" style="margin-top: 20px;margin-left: 500px;padding: 10px;">Submit</button> -->
+</form><br><br>
+<center>
+	<div id="add-table-here"></div>
+</center>
+
+<br><br><br><br><br><br>
+<div id="footer" style="padding-top: 25px;">
+		<span style="margin-right: 500px; margin-left: 50px; font-family: 'Times New Roman';vertical-align: middle; color: white;">&copy copyrights</span> <span style="margin-right: 500px;"><a href="#" style="color: white;">About Us</a> | <a href="#" style="color: white;">FAQ</a> | <a href="#" style="color: white;">Contact Us</a></span><span style="color: white;">Designed by ADJ Team</span>
+	</div>
+
+
+	<script>
+		function showTrain() {
+			window.alert("inside showScholarship()");
+			var xhttp;
+			var src = document.searchForm.src.value;
+			var dest = document.searchForm.dest.value;
+			var url = "Display?source="+src+"&destination="+dest;
+			alert(url);
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				// alert("inside xhttp");
+				if (this.readyState == 4 && this.status == 200) {
+					// alert("inside if");
+					var val = this.responseText;
+					// alert(val);
+					document.getElementById("add-table-here").innerHTML = val;
+					document.getElementById("submit").remove();
+				}
+			};
+			xhttp.open("GET", url, false);
+			xhttp.send();
+		}
+	</script>
+</body>
+
+
+
+</html>
